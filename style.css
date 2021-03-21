@@ -1,17 +1,77 @@
 @import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
 
 body {
   background-color: darkslategrey;
   color: ghostwhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  font-family: "Oswald", sans-serif;
 }
 
-.form,
+.clock {
+  margin: 50px;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.from,
 .greetings {
   display: none;
 }
 
 .showing {
   display: block;
+}
+
+.from input,
+.greetings,
+.toDo-input {
+  padding: 15px;
+  font-size: 30px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid white;
+}
+
+.greetings {
+  border: none;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.from input::placeholder,
+.toDo-input::placeholder {
+  color: ghostwhite;
+}
+
+.from input:focus,
+.toDo-input:focus {
+  color: ghostwhite;
+  outline: none;
+}
+
+.toDoForm {
+  margin: 20px;
+}
+
+.toDo-input {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.js-toDoList li {
+  margin: 10px;
+  padding: 5px;
+  font-size: 25px;
+}
+
+.js-toDoList li button {
+  margin-left: 10px;
+  background: none;
+  border-radius: 5px;
 }
 
 .bgimge {
@@ -22,6 +82,13 @@ body {
   height: 100%;
   z-index: -1;
   animation: bgimg 0.3s linear;
+}
+
+.js-weather {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
 }
 
 @keyframes bgimg {
