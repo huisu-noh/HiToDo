@@ -1,0 +1,14 @@
+@import "reset.css";
+
+body {
+  background-color: darkslategrey;
+  color: ghostwhite;
+}
+
+input {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
