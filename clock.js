@@ -7,7 +7,7 @@ function clock(){
     const month = date.getMonth();
     const clockDate = date.getDate();
     const day = date.getDay();
-    const week = ["Mon", "Tue", "Wen", "Thu", "Fri", "Sat", "Sun"];
+    const week = ["Sun", "Mon", "Tue", "Wen", "Thu", "Fri", "Sat"];
     const hours = date.getHours();
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
