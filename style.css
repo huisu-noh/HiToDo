@@ -5,7 +5,8 @@ body {
   color: ghostwhite;
 }
 
-input {
+.form,
+.greetings {
   display: none;
 }
 
